@@ -94,7 +94,7 @@
 
 .smiley-list .smiley-item-3 input[type="radio"]:checked + label::before {
 	filter: saturate(1);
-	background-color: #fbea2e;
+	background-color: #e95a0b;
 }
 
 .smiley-list .smiley-item-4 input[type="radio"]:checked + label::before {
@@ -121,5 +121,5 @@ body .answer-item.smiley-item label::after{
 }
 
 .smiley-list div.clearfix{
-	display: none;
+	//display: none;
 }
