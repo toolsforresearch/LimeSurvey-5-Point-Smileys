@@ -18,6 +18,7 @@
 	justify-content: space-between;
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	overflow: hidden;
 }
 
 .smiley-list .smiley-item {
@@ -44,15 +45,15 @@
 }
 
 .smiley-list .smiley-item label::before {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    height: 0;
-    margin-left: -50%;
-    padding-top: 100%;
-    content: "";
-    border: 0 none;
-    border-radius: 0;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  margin-left: -50%;
+  padding-top: 100%;
+  content: "";
+  border: 0 none;
+  border-radius: 0;
 	background: transparent 0 0 no-repeat;
 	background-size: cover;
 	filter: saturate(0.2);
@@ -118,8 +119,4 @@
 body .answer-item.smiley-item label::after{
 	display: none;
 	background-color: transparent;
-}
-
-.smiley-list div.clearfix{
-	//display: none;
 }
