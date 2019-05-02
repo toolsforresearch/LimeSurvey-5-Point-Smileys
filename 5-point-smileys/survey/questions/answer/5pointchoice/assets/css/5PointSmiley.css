@@ -11,21 +11,23 @@
 /** SMILEYS QUESTION **/
 
 .smiley-list {
-	width: 100%;
-	max-width: 395px;
+	max-width: 400px;
 	padding: 0;
 	margin: 0 0 10px 0;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 .smiley-list .smiley-item {
-	display: block;
+	display: inline-block;
 	clear: none;
-	float: left;
-	width: 18%;
-	width: 20%;
-    padding: 0;
-	margin: 0 1%;
-	margin: 0;
+	width: 70px;
+}
+
+.radio-item.smiley-item{
+	padding: 0;
 }
 
 .smiley-list .smiley-item label {
@@ -37,66 +39,72 @@
 	font-size: 0;
 }
 
-.smiley-list .smiley-item-5 label {
-}
-
 .smiley-list .smiley-item input[type="radio"]:checked + label {
-	background: #ECF0F1;
+	
 }
 
 .smiley-list .smiley-item label::before {
     position: absolute;
     left: 50%;
-	top: 8px;
-    display: inline-block;
-    width: 79.4872%;
+    width: 100%;
     height: 0;
-    margin-left: -39.7436%;
-    padding-top: 79.4872%;
+    margin-left: -50%;
+    padding-top: 100%;
     content: "";
     border: 0 none;
     border-radius: 0;
 	background: transparent 0 0 no-repeat;
 	background-size: cover;
-	opacity: 0.8;
-    filter: alpha(opacity=80);
+	filter: saturate(0.2);
 }
 
 .smiley-list .smiley-item-1 label::before { 
-	background-image: url(../images/smile_1.png); 
-	filter: saturate(0);
+	background-image: url(../images/smile1_1.svg); 
 }
 
 .smiley-list .smiley-item-2 label::before { 
-	background-image: url(../images/smile_2.png); 
-	filter: saturate(0);
+	background-image: url(../images/smile1_2.svg); 
 }
 
 .smiley-list .smiley-item-3 label::before { 
-	background-image: url(../images/smile_3.png); 
-	filter: saturate(0);
+	background-image: url(../images/smile1_3.svg); 
 }
 
 .smiley-list .smiley-item-4 label::before { 
-	background-image: url(../images/smile_4.png); 
-	filter: saturate(0);
+	background-image: url(../images/smile1_4.svg); 
 }
 
 .smiley-list .smiley-item-5 label::before { 
-	background-image: url(../images/smile_5.png); 
-	filter: saturate(0);
+	background-image: url(../images/smile1_5.svg); 
 }
 
 .smiley-list .smiley-item input[type="radio"]:hover + label::before {
-	filter: saturate(0.8);
-	opacity: 1;
-    filter: alpha(opacity=100);
+	filter: saturate(0.7);
 }
 
-.smiley-list .smiley-item input[type="radio"]:checked + label::before {
-	opacity: 1;
-    filter: alpha(opacity=100);
+.smiley-list .smiley-item-1 input[type="radio"]:checked + label::before {
 	filter: saturate(1);
+	background-color: #349a04;
+}
+
+.smiley-list .smiley-item-2 input[type="radio"]:checked + label::before {
+	filter: saturate(1);
+	background-color: #66ca0e;
+}
+
+.smiley-list .smiley-item-3 input[type="radio"]:checked + label::before {
+	filter: saturate(1);
+	background-color: #fbea2e;
+}
+
+.smiley-list .smiley-item-4 input[type="radio"]:checked + label::before {
+	filter: saturate(1);
+	background-color: #fc3104;
+}
+
+.smiley-list .smiley-item-5 input[type="radio"]:checked + label::before {
+	filter: saturate(1);
+	background-color: #cc0204;
 }
 
 .smiley-list .smiley-item input[type="radio"]:focus + label::before {
@@ -110,4 +118,8 @@
 body .answer-item.smiley-item label::after{
 	display: none;
 	background-color: transparent;
+}
+
+.smiley-list div.clearfix{
+	display: none;
 }
