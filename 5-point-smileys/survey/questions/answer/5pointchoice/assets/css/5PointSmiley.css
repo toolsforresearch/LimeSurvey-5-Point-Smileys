@@ -81,6 +81,7 @@
 
 .smiley-list .smiley-item input[type="radio"]:hover + label::before {
 	filter: saturate(0.7);
+	background-color: #ccc;
 }
 
 .smiley-list .smiley-item-1 input[type="radio"]:checked + label::before {
