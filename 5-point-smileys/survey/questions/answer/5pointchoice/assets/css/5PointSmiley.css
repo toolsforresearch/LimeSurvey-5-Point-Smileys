@@ -13,7 +13,9 @@
 .smiley-list {
 	max-width: 400px;
 	padding: 0;
-	margin: 0 0 10px 0;
+	margin-bottom:10px;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	justify-content: space-between;
 	border: 1px solid #ccc;
@@ -60,28 +62,52 @@
 }
 
 .smiley-list .smiley-item-1 label::before { 
-	background-image: url(../images/smile1_1.svg); 
+	background-image: url(../images/default/smile1.svg); 
 }
 
 .smiley-list .smiley-item-2 label::before { 
-	background-image: url(../images/smile1_2.svg); 
+	background-image: url(../images/default/smile2.svg); 
 }
 
 .smiley-list .smiley-item-3 label::before { 
-	background-image: url(../images/smile1_3.svg); 
+	background-image: url(../images/default/smile3.svg); 
 }
 
 .smiley-list .smiley-item-4 label::before { 
-	background-image: url(../images/smile1_4.svg); 
+	background-image: url(../images/default/smile4.svg); 
 }
 
 .smiley-list .smiley-item-5 label::before { 
-	background-image: url(../images/smile1_5.svg); 
+	background-image: url(../images/default/smile5.svg); 
 }
 
 .smiley-list .smiley-item input[type="radio"]:hover + label::before {
 	filter: saturate(0.7);
 	background-color: #ccc;
+}
+
+.alt1 .smiley-list .radio-item.smiley-item{
+	
+}
+
+.alt1 .smiley-list .smiley-item-1 label::before { 
+	background-image: url(../images/alt1/smile1.png); 
+}
+
+.alt1 .smiley-list .smiley-item-2 label::before { 
+	background-image: url(../images/alt1/smile2.png); 
+}
+
+.alt1 .smiley-list .smiley-item-3 label::before { 
+	background-image: url(../images/alt1/smile3.png); 
+}
+
+.alt1 .smiley-list .smiley-item-4 label::before { 
+	background-image: url(../images/alt1/smile4.png); 
+}
+
+.alt1 .smiley-list .smiley-item-5 label::before { 
+	background-image: url(../images/alt1/smile5.png); 
 }
 
 .smiley-list .smiley-item-1 input[type="radio"]:checked + label::before {
